@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Dog Information</title>
+    <style>
+        /* Styles omitted for brevity */
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h1>Add Dog Information</h1>
+        <form action="add-dog.php" method="POST" enctype="multipart/form-data">
+            <div class="form-group">
+                <label for="name">Dog's Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter dog's name" required>
+            </div>
+            <div class="form-group">
+                <label for="breed">Breed</label>
+                <input type="text" id="breed" name="breed" placeholder="Enter breed" required>
+            </div>
+            <div class="form-group">
+                <label for="age">Age (in years)</label>
+                <input type="number" id="age" name="age" placeholder="Enter age" min="0" required>
+            </div>
+            <div class="form-group">
+                <label for="description">Description</label>
+                <textarea id="description" name="description" placeholder="Enter description of the dog" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="image">Upload Dog's Image (optional)</label>
+                <input type="file" id="image" name="image" accept="image/*">
+            </div>
+            <div class="form-group">
+                <button type="submit">Add Dog</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

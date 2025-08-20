@@ -1,0 +1,605 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+/* for navigation bar and space from logo*/
+.navbar{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+/* menu in the right side */
+nav{
+    flex: 1;
+    text-align: right;
+}
+/* No bullet point */
+nav ul{
+    display: inline-block;
+    list-style-type: none;
+}
+/* In order of the list of menubar and the space */
+nav ul li{
+    display: inline-block;
+    margin-right: 20px;
+}
+/* for the color of h1 */
+h1 {
+    text-decoration: none;
+    color: rgb(18, 11, 11);
+    text-align: left; /* Aligns h1 text to the left */
+}
+
+/* for anchor tag and color of the font */
+a {
+    text-decoration: none;
+    color: #454545;
+    font-weight: bold;
+    text-align: left; /* Aligns anchor tag text to the left */
+}
+
+/* Different color for the menu */
+p {
+    color: blue;
+    text-align: left; /* Aligns paragraph text to the left */
+    text-transform: uppercase;
+}
+
+/* for the container and automatice size of the both margin*/
+.container{
+    max-width: 1300px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+/* for row of the logo2 images */
+.row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.colm-2 {
+    flex-basis: 40%;
+    min-width: 35px;
+    text-align: right; /* Aligns the content to the right */
+}
+
+.colm-2 img {
+    max-width: 30%;
+    padding: 20px 20px;
+    display: block;
+    margin-left: auto; /* Aligns the image to the right */
+}
+
+/* for the font size of the title in colm-2 */
+.colm-2 h1{
+    font-size: 50px;
+    line-height: 60px;
+    margin: 25px 0;
+}
+/* for button size */
+.btn{
+    display: inline-block;
+    background: #ff523b;
+    color: #fff;
+    padding: 8px 30px;
+    margin: 30px 0;
+    border-radius: 30px;
+    transition: background 0.5s;
+
+}
+/* for button hover effect */
+.btn:hover{
+    background: skyblue;
+}
+
+/* for header */ 
+.header { background-image: url(images/logo1111.jpg);
+     background-size: cover; /* Ensures the image fits within the header */ 
+     background-repeat: no-repeat; /* Prevents the image from repeating */
+     background-position: center; /* Centers the image in the header */ }
+/* for big font size */
+.header .row{
+    margin-top: 100px;
+}
+/* for catogories */
+.catogories{
+    margin: 70px 0;
+}
+/* Ensuring images are the same size and in the same row */ 
+.categories img { 
+    max-width: 100%; /* Adjusts image size to fit within its container */ 
+    height: auto; 
+    display: inline-block; /* Ensures images are in the same row */ }
+/* images size and in same row */
+.colm-3{
+    flex-basis: 30%;
+    min-width: 250px;
+    margin-bottom: 20px;
+}
+/* images width */
+.colm-3 img{
+    width: 100%;
+}
+/* for small container of the images and the size of the images */
+.small-container {
+    max-width: 1080px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.colm-4 {
+    flex-basis: 200px;  /* Changed from 25px to 200px */
+    padding: 10px;
+    min-width: 200px;
+    margin-bottom: 50px;
+    transition: transform 0.5s;
+}
+
+.colm-4 img {
+    width: 100%;
+    height: 100%;  /* Ensures images fill the container */
+    object-fit: cover;  /* Maintains aspect ratio, cropping if necessary */
+}
+
+
+/* for h4 style */
+h4{
+    color: #555;
+    font-weight: normal;
+
+}
+.colm-4 p{
+    font-size: 14px;
+}
+/* changing color for ration */
+.rating .fa{
+    color: #ff523b;
+}
+/* for hover effect on colm-4 */
+.colm-4 :hover{
+    transform: translateY(-5px);
+}
+/* ----------------- offer ------------------- */
+/* for offer gradient and image modification */
+.offer{
+    background: radial-gradient(#fff,#ffd6d6);
+    margin-top: 60px;
+    padding: 15px 0;
+}
+/* for size of black horse shoes */
+.colm-2 .offer-img{
+    padding: 50px;
+}
+/* changing the color of the text */
+small{
+    color: #555;
+}
+/* ------------------ testimmonial ---------------- */
+/* size of the testimmonial pannel */
+.testimmonial{
+    padding-top: 100px;    
+}
+/* padding of the testimmonial */
+.testimmonial .colm-3{
+    text-align: center;
+    padding: 40px 20px;
+    box-shadow: 0 0 20px 0px greenyellow;
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+/* border of the testimmonial images */
+.testimmonial .colm-3 img{
+   width: 50px;
+   margin-top: 20px;
+   border-radius: 50%; 
+}
+/* for testimmonial hover effect */
+.testimmonial .colm-3:hover{
+    transform: translateY(-10px);
+}
+/* color of the " mark  */
+.fa.fa-quote-left{
+    font-size: 34px;
+    color: #ff523b;
+}
+/* change the font size of the paragraph */
+.colm-3 p{
+    font-size: 12px;
+    margin: 12px 0;
+    color: #777;
+}
+/* for the font size of the name */
+.testimmonial .colm-3 h3{
+    font-weight: 600;
+    color: #555;
+    font-size: 16px;
+}
+/* ---------------- brands ----------------- */
+.brands{
+    margin: 100px auto;
+}
+/* colm width */
+.colm-5{
+    width: 160px;
+}
+/* for designing the image of the shoes logo */
+.colm-5 img{
+    width: 100%;
+    cursor: pointer;
+    filter: grayscale(100%);
+}
+/* hover and changing the color of the logo of the brands */
+.colm-5 img:hover{
+    filter: grayscale(0);
+}
+/* ---------------- footer ----------------- */
+/* for the size and other of the footer */
+.footer{
+    background: #000;
+    color: #8a8a8a;
+    font-size: 14px;
+    padding: 60px 0 20px;
+}
+/* for the footer paragraph */
+.footer p{
+    color: #8a8a8a;
+}
+/* for the footer of the heading */
+.footer h3{
+    color: #fff;
+    margin-bottom: 20px;
+}
+/* for the all text bodies  */
+.footer-colm-1, .footer-colm-2, .footer-colm-3, .footer-colm-4{
+    min-width: 250px;
+    margin-bottom: 20px;
+}
+/* for all the basis of margin of the footer */
+.footer-colm-1{
+    flex-basis: 30%;
+}
+/* for the image margin and text align */
+.footer-colm-2{
+    flex: 1;
+    text-align: center;
+}
+/* for the margin of the image of the logo */
+.footer-colm-2 img{
+    width: 180px;
+    margin-bottom: 20px;
+}
+/* for resizing the text field of colm3 and colm4 */
+.footer-colm-3, .footer-colm-4{
+    flex-basis: 12%;
+    text-align: center;
+}
+/* for removing the bullet points */
+ul{
+    list-style-type: none;
+}
+/* fot the size of the app and play store */
+.app-logo{
+    margin-top: 20px;
+}
+/* for the resize of the images */
+.app-logo img{
+    width: 180px;
+}
+/* for the horizontal line of the copyright */
+.footer hr{
+    border: none;
+    background: #b5b5b5;
+    height: 1px;
+    margin: 20px 0; 
+}
+/* copyright text in the centre */
+.copyright{
+    text-align: center;
+}
+/* for the menu icon */
+.menu-icon{
+    width: 24px;
+    margin-left: 20px;
+    display: none;
+}
+ /* media query for the menu to hide the menu in the big screen */
+@media only screen and (max-width:800px){
+    nav ul{
+        position: absolute;
+        top: 70px;
+        left: 0;
+        background: orangered;
+        width: 100%;
+        overflow: hidden;
+        transition: 0.5s;
+    }
+    /* for the menu bar of the size  */
+    nav ul li{
+        display: block;
+        margin-right: 50px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    /* for changing the color of the font */
+    nav ul li a{
+        color: #fff;
+    }
+    /* for hiding the menu icon in big screen */
+    .menu-icon{
+        display: block;
+        cursor: pointer;
+    }
+}
+/* ----------------- all products page ------------------ */
+/* for all the row 2 product margin */
+.row-2{
+    justify-content: space-between;
+    margin: 100px auto 70px;
+}
+/* for select border */
+select{
+    border: 1px solid black;
+    border-radius: 5px;
+    background: blanchedalmond;
+}
+/* for removing the back border */
+select:focus{
+    outline: none;
+}
+/* for the icon for next page */
+.page-btn{
+    margin: 0 auto 80px;
+}
+/* for designing the btn to the next page */
+.page-btn span{
+    display: inline-block;
+    border: 1px solid #ff523b;
+    margin-left: 10px;
+    border-radius: 2px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+}
+/* for hover effect in the button */
+.page-btn span:hover{
+    background: #ff523b;
+    color: white;
+}
+/* single product details */
+.single-product{
+    margin-top: 80px;
+}
+/* single product image padding */
+.single-product .col-2 img{
+    padding: 0;
+}
+/* single product padding */
+.single-product .col-2{
+    padding: 0px;
+}
+/* price of the product in bold */
+.single-product h4{
+    margin: 10px 0;
+    font-size: 22px;
+    font-weight: bold;
+}
+/* for the size and the padding of the size btn */
+.single-product select{
+    display: block;
+    padding: 10px;
+    margin-top: 20px;
+}
+/* for the size of the box of the numbers that will be ordered */
+.single-product input{
+    width: 50px;
+    height: 40px;
+    padding-left: 10px;
+    font-size: 20px;
+    margin-right: 10px;
+    border: 1px solid #ff523b;
+}
+/* border of the up and down meanu is orange */
+input:focus{
+    outline: none;
+}
+/* icon in product and color */
+.single-product .fa{
+    color: #ff523b;
+    margin-left: 10px;
+}
+/* for the small size of the other images */
+.small-img-row{
+    display: flex;
+    
+}
+/* justify-content: space-between; */
+.small-img-col{
+    flex-basis: 17.5%;
+    cursor: pointer;
+    border: 1px solid grey;
+    
+}
+
+
+/* cart items details */
+.cart-page{
+    margin: 80px auto;
+}
+/* for table gap  */
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+
+/* --------------------------login css -------------- */
+/* for login page */
+/* for color */
+.account-page{
+    padding: 50px 0;
+    background: radial-gradient(#fff,#ffd6d6);  
+}
+/* for form container */
+.form-container {
+    background: #fff;
+    width: 300px;
+    height: 450px; /* Increased from 400px to 450px */
+    position: relative;
+    text-align: center;
+    padding: 20px 0;
+    margin: auto;
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.1);
+    overflow: hidden;
+}
+/* for form container */
+.form-container span{
+    font-weight: bold;
+    padding: 0;
+    color: #555;
+    cursor: pointer;
+    width: 100px;
+    display: inline-block;
+}
+/* for form btn */
+.form-btn{
+    display: inline-block;  
+}
+/* for the container of form */
+.form-container form {
+    max-width: 300px;
+    padding: 0 20px;
+    position: absolute;
+    top: 100px; /* Adjusted from 130px to 100px */
+    transition: transform 1s;
+}
+/* for input form */
+form input {
+    width: 100%;
+    height: 35px; /* Increased from 30px to 35px */
+    margin: 10px 0;
+    padding: 0 10px;
+    border: 1px solid #ccc;
+}
+/* for the button inside the form */
+form .btn {
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    margin: 15px 0; /* Increased margin for better spacing */
+    padding: 10px 0; /* Added padding for better appearance */
+    font-size: 16px;
+}
+/* for btn focus */
+form .btn:focus{
+    outline: none; 
+}
+/* for position of loginform */
+#LoginForm{
+    left: -300px;
+}
+/* for reg form */
+#RegForm{
+    left: 0;
+}
+/* for the font of the forgot password */
+form a{
+    font-size: 12px;
+}
+/* for the border of the form(register) */
+#Indicator{
+    width: 100px;
+    border: none;
+    background: #ff523b;
+    height: 3px;
+    margin-top: 8px;
+    transform: translateX(100px);
+    transition: transform 1s;
+}
+/* ---------------about us ------------------------ */
+.about{
+    width: 100%;
+    padding: 78px 0px;
+    background: radial-gradient(#fff,#ffd6d6);
+}
+/* about image */
+.about img{
+    height: auto;
+    width: 420px;
+}
+/* about text width */
+.about-text{
+    width: 550px;
+}
+/* about the main container */
+.main{
+    width: 1130px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+/* about the color of h1 */
+.about-text h1{
+    color: orangered;
+    font-size: 80px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+/* for the text of h5 */
+.about-text h5{
+    color: black;
+    font-size: 25px;
+    text-transform: capitalize;
+    margin-bottom: 25px;
+    letter-spacing: 2px;
+}
+/* about the different color of heading */
+span{
+    color: #f9004d;
+}
+/* for about text color */
+.about-text p{
+    color: black;
+    letter-spacing: 1px;
+    line-height: 28px;
+    font-size: 18px;
+    margin-bottom: 45px;
+}
+
+
+
+
+
+
+
+/* media querry for less than 600 screen size */
+@media only screen and (max-width:600px){
+    .row{
+        text-align: center;
+    }
+    .colm-2, .colm-3, .colm-4{
+        flex-basis: 100%; 
+    }
+    .single-product .row{
+        text-align: left;
+    }
+    .single-product col-2{
+        padding: 20px 0;
+    }
+    .single-product h1{
+        font-size: 26px;
+        line-height: 32px;
+    }
+}
